@@ -1,67 +1,105 @@
-[
-  {
-     "id":"hJRzQJlG9dw?si=tzv0FtfAZoRNy-wE",
-     "name":"Mega Noticias"
-  },
-  {
-   "id":"k56-tTOKflc?si=ixf76FVc2MybDL4C",
-   "name":"Mega Tiempo"
-},
 {
-   "id":"hYcZG6H_gpE?si=XMqmU2j6js5bbZxX",
-   "name":"T13"
-},
-  {
-     "id":"gPLHafMRORY?si=MoXF6Ylr6qijXNOc",
-     "name":"24 Horas"
-  },
-  {
-     "id":"G5pHuBCqgrs?si=j03kNZ2IimNhUYm5",
-     "name":"La Nación Argentina"
-  },
-  {
-     "id":"Y-IlMeCCtIg?si=Ic5V6A0KfsBQ_atp",
-     "name":"France 24"
-  },
-  {
-     "id":"cb12KmMMDJA?si=1TF3_a76a6dw8zad",
-     "name":"TN Noticias"
-  },
-  {
-     "id":"MUOLueq21-M?si=qYd4uzKJM9pcI_Pp",
-     "name":"NBC News"
-  },
-  {
-     "id":"gCNeDWCI0vo?si=TIJwrF1N18YC4xgk",
-     "name":"Al Jazeera"
-  },
-  {
-     "id":"Ulwgdf5t46o?si=fxlQcRJrcvvqD47s",
-     "name":"NMás"
-  },
-  {
-     "id":"M90qWFGEsv4?si=3KZPWsMFaTFphWxQ",
-     "name":"RTVE Noticias"
-  },
-  {
-     "id":"Io5mt83nCcU?si=DhdPH7gjsHTrzfDZ",
-     "name":"DW Español"
-  },
-  {
-     "id":"vZYMwAm8sso?si=fVVa8wGV50TD8gm3",
-     "name":"USA Today"
-  },
-  {
-     "id":"oJUvTVdTMyY?si=8KWA6w3CX3QvRu78",
-     "name":"SKY News"
-  },
-  {
-     "id":"avly0uwZzOE?si=25UM28QDrCFgdTRa",
-     "name":"Crónica TV"
-  },
-  {
-     "id":"YDfiTGGPYCk?si=-42dmfnHHIly597z",
-     "name":"FOX News"
-  }
-]
-
+  "version": "0.1.2",
+  "channels": [
+    {
+      "id": "BCdqI3yUgDI?si=C6aFBjuNYVZ4XNZf",
+      "name": "Mega Noticias",
+      "country": "Chile"
+   },
+    {
+      "id": "OI1w6sb0-ec?si=WaUehcP9_pVOj-1B",
+      "name": "Mega Tiempo",
+      "country": "Chile"
+   },
+    {
+      "id": "hYcZG6H_gpE?si=XMqmU2j6js5bbZxX",
+      "name": "T13",
+      "country": "Chile"
+   },
+    {
+      "id": "gPLHafMRORY?si=MoXF6Ylr6qijXNOc",
+      "name": "24 Horas",
+      "country": "Chile"
+   },
+    {
+      "id": "_LHdUYNxGTQ?si=Aw_45pheLdVgAoHX",
+      "name": "CHV Noticias",
+      "country": "Chile"
+   },
+    {
+      "id": "G5pHuBCqgrs?si=j03kNZ2IimNhUYm5",
+      "name": "La Nación Argentina",
+      "country": "Argentina"
+   },
+    {
+      "id": "Y-IlMeCCtIg?si=Ic5V6A0KfsBQ_atp",
+      "name": "France 24",
+      "country": "Francia"
+   },
+    {
+      "id": "cb12KmMMDJA?si=1TF3_a76a6dw8zad",
+      "name": "TN Noticias",
+      "country": "Argentina"
+   },
+    {
+      "id": "MUOLueq21-M?si=qYd4uzKJM9pcI_Pp",
+      "name": "NBC News",
+      "country": "USA"
+   },
+    {
+      "id": "gCNeDWCI0vo?si=TIJwrF1N18YC4xgk",
+      "name": "Al Jazeera",
+      "country": "Medio oriente"
+   },
+    {
+      "id": "Ulwgdf5t46o?si=fxlQcRJrcvvqD47s",
+      "name": "NMás",
+      "country": "Mexico"
+   },
+    {
+      "id": "M90qWFGEsv4?si=3KZPWsMFaTFphWxQ",
+      "name": "RTVE Noticias",
+      "country": "España"
+   },
+    {
+      "id": "Io5mt83nCcU?si=DhdPH7gjsHTrzfDZ",
+      "name": "DW Español",
+      "country": "Alemania"
+   },
+    {
+      "id": "vZYMwAm8sso?si=fVVa8wGV50TD8gm3",
+      "name": "USA Today",
+      "country": "USA"
+   },
+    {
+      "id": "oJUvTVdTMyY?si=8KWA6w3CX3QvRu78",
+      "name": "SKY News",
+      "country": "UK"
+   },
+    {
+      "id": "avly0uwZzOE?si=25UM28QDrCFgdTRa",
+      "name": "Crónica TV",
+      "country": "Argentina"
+   },
+    {
+      "id": "YDfiTGGPYCk?si=-42dmfnHHIly597z",
+      "name": "FOX News",
+      "country": "USA"
+   },
+    {
+      "id": "0PdfNeEW-QQ?si=5uP5ohT63TQ-dVA_",
+      "name": "CNN Brasil",
+      "country": "Brasil"
+   },
+    {
+      "id": "wKz4NUnCsy4?si=tNTMy8QV0gDEIgeX",
+      "name": "Noticias Caracol",
+      "country": "Colombia"
+    },
+    {
+      "id": "MocwNxD7WJk?si=FeOCfp6b5YOnfM1Y",
+      "name": "Telefe Noticias",
+      "country": "Argentina"
+    }
+  ]
+}

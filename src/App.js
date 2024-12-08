@@ -1,18 +1,34 @@
 import React, { useState, useEffect } from "react";
 import VideoGrid from "./VideoGrid";
-import ChannelModal from "./ChannelModal"; // Modal inicial
-import allChannels from "./channels.json"; // Importar los datos desde JSON
+import ChannelModal from "./ChannelModal";
+import allChannels from "./channels.json";
 
 const App = () => {
-  const storedChannels = JSON.parse(localStorage.getItem("selectedChannels"));
-  const storedGridSize = parseInt(localStorage.getItem("gridSize"));
-
-  const initialChannels = storedChannels || allChannels.slice(0, 9).map((channel) => channel.id);
-  const initialGridSize = storedGridSize || 3;
-
-  const [selectedChannels, setSelectedChannels] = useState(initialChannels);
-  const [gridSize, setGridSize] = useState(initialGridSize);
+  const [selectedChannels, setSelectedChannels] = useState([]);
+  const [gridSize, setGridSize] = useState(3);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    const storedVersion = localStorage.getItem("channelsVersion");
+    const currentVersion = allChannels.version;
+
+    // Cargar los canales seleccionados y sincronizar IDs si cambia la versión
+    const storedChannels = JSON.parse(localStorage.getItem("selectedChannels")) || [];
+    const allChannelIds = allChannels.channels.map((channel) => channel.id);
+
+    if (storedVersion !== currentVersion) {
+      // Sincronizar los canales seleccionados con los nuevos IDs
+      const updatedChannels = storedChannels.filter((id) => allChannelIds.includes(id));
+      localStorage.setItem("selectedChannels", JSON.stringify(updatedChannels));
+      localStorage.setItem("channelsVersion", currentVersion);
+      setSelectedChannels(updatedChannels);
+    } else {
+      setSelectedChannels(storedChannels.length > 0 ? storedChannels : allChannels.channels.slice(0, 9).map((channel) => channel.id));
+    }
+
+    const storedGridSize = parseInt(localStorage.getItem("gridSize")) || 3;
+    setGridSize(storedGridSize);
+  }, []);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -52,7 +68,7 @@ const App = () => {
       </button>
       <ChannelModal
         isOpen={isModalOpen}
-        allChannels={allChannels}
+        allChannels={allChannels.channels}
         selectedChannels={selectedChannels}
         gridSize={gridSize}
         onClose={toggleModal}
